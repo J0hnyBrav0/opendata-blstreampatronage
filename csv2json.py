@@ -29,8 +29,6 @@ def main(argv):
                     sys.exit()
             elif opt in ("-o", "--ofile"):
                 output_file = arg
-            print 'Input file: "', input_file
-            print 'Output file: "', output_file
         dictionary = import_from_file(input_file)
         dict_2_json_file(output_file, dictionary)
 
